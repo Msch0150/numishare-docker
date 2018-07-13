@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  solr:
+    image: solr:v1
+    build: ./solr
+    volumes:
+      - ./docker-solr-data/numishare-published/data:/opt/solr/server/solr/numishare-published/data
+    ports:
+      - "10204:8983"
+  db:
+    image: evolvedbinary/exist-db:eXist-4.0.0
+    volumes:
+      - ./docker-exist-data:/exist-data
+    ports:
+      - "10202:8080"
+  web:
+    image: numishare:v1
+    build: ./web
+    ports:
+      - "10200:8080"
+    environment:
+      JAVA_OPTS: '-server -Djava.awt.headless=true -Xms1G -Xmx1G -XX:MaxPermSize=256m -XX:NewSize=896m -XX:MaxNewSize=896m -Dlog4j.configuration=/usr/local/tomcat/lib/log4j.properties -XX:+UseConcMarkSweepGC -XX:+CMSPermGenSweepingEnabled -XX:+CMSClassUnloadingEnabled'
+    depends_on:
+      - db
