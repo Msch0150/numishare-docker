@@ -1,4 +1,4 @@
-FROM solr:6
+FROM solr:5.5
 
 ENV TEMP_DIR=/var/tmp
 ENV SolrHost=solr
