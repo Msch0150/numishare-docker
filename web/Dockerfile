@@ -47,6 +47,10 @@ RUN cd ${TEMP_DIR} && \
 RUN cd ${CATALINA_HOME}/webapps/orbeon/WEB-INF/resources/apps/numishare/ && \
     ln -s ui default
 
+### Install vim/vi
+
+RUN apt-get update && \
+    apt-get install vim -y
 
 COPY tomcat-users.xml ${CATALINA_HOME}/conf/
 COPY orbeon.xml ${CATALINA_HOME}/conf/Catalina/localhost/
