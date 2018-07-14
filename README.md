@@ -10,3 +10,12 @@ To setup numishare in a Linux environment with Docker installed:
     cd numishare-docker-master && \
     chmod +x setup.sh && \
     ./setup.sh
+
+The following links can be used:
+
+    http://localhost:10200/orbeon/numishare/admin/
+    http://localhost:10202/exist
+    http://localhost:10204/solr
+    
+> If required, change "localhost" to your local IP address.
+> By default the "admin" user is setup without password. Dont't forget to change it.
