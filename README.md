@@ -18,4 +18,4 @@ The following links can be used:
     http://localhost:10204/solr
     
 > If required, change "localhost" to your local IP address.
-> By default the "admin" user is setup without password. Dont't forget to change it.
+> By default the "admin" user is setup without password. Don't forget to change it.
