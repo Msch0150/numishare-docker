@@ -28,7 +28,7 @@ The following links can be used:
 
 When creating a new collection set the "Public Site" to:
 
-    http://localhosz:10200/orbeon/numishare/<collection name>/
+    http://localhost:10200/orbeon/numishare/<collection name>/
     
 In "Modify Setting" > Theme URL:
 
