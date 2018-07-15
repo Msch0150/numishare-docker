@@ -19,3 +19,5 @@ The following links can be used:
     
 > If required, change "localhost" to your local IP address.
 > By default the "admin" user is setup without password. Don't forget to change it (in web/tomcat-users.xml).
+
+![Overview](https://user-images.githubusercontent.com/37273467/42733882-3044fcdc-883a-11e8-9695-dc1e7a472cb2.jpg)
