@@ -23,3 +23,14 @@ The following links can be used:
 ## Overview
 
 ![Overview](https://user-images.githubusercontent.com/37273467/42733882-3044fcdc-883a-11e8-9695-dc1e7a472cb2.jpg)
+
+## Post Installation Tasks
+
+When creating a new collection set the "Public Site" to:
+
+> http://<myip>:10200/orbeon/numishare/<collection name>/
+    
+In "Modify Setting" > Theme URL:
+
+> http://<myip>:10200/orbeon/numishare/
+    
