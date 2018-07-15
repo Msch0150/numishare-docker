@@ -44,6 +44,12 @@
 
 <role rolename="numishare-admin"/>
 <user username="admin" password="" roles="numishare-admin"/>
+  
+<role rolename="collection_01-admin"/>
+<user username="collection_01" password="" roles="collection_01-admin"/>
+
+<role rolename="collection_02-admin"/>
+<user username="collection_02" password="" roles="collection_02-admin"/>
 
 </tomcat-users>
 
