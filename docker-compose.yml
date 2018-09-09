@@ -26,7 +26,7 @@ services:
 
   iiif:
     image: lorisimageserver/loris
-    build ./loris
+    build: ./loris
     volumes:
       - ./docker-loris-data/images:/opt/loris/tests/img
     ports:
