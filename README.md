@@ -36,3 +36,4 @@ In "Modify Setting" > Theme URL:
 
 > If required, change "localhost" to your local IP address.
     
+(Image created using cat ../myprogram/docker-compose.yml | docker run -i funkwerk/compose_plantuml --link-graph --boundaries| docker run -i think/plantuml > out.svg)
