@@ -7,6 +7,7 @@ To setup numishare in a Linux environment with Docker installed:
     mkdir -p my_numishare && cd my_numishare && \
     wget https://github.com/Msch0150/numishare-docker/archive/master.zip && \
     unzip master.zip && \
+    rm master.zip && \
     cd numishare-docker-master && \
     chmod +x setup.sh && \
     ./setup.sh
