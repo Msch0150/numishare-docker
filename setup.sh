@@ -2,6 +2,7 @@
 
 mkdir -p docker-exist-data
 mkdir -p docker-solr-data/numishare-published/data
+mkdir -p docker-loris-data/images
 
 chown -R 8983:8983 docker-solr-data
 
