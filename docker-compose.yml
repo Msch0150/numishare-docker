@@ -14,6 +14,13 @@ services:
       - ./docker-exist-data:/exist-data
     ports:
       - "10202:8080"
+  iiif:
+    image: lorisimageserver/loris
+    build: ./loris
+    volumes:
+      - ./docker-loris-data/images:/opt/loris/tests/img
+    ports:
+      - "10206:5004"
   web:
     image: numishare:v1
     build: ./web
@@ -22,13 +29,7 @@ services:
     environment:
       JAVA_OPTS: '-server -Djava.awt.headless=true -Xms1G -Xmx1G -XX:MaxPermSize=256m -XX:NewSize=896m -XX:MaxNewSize=896m -Dlog4j.configuration=/usr/local/tomcat/lib/log4j.properties -XX:+UseConcMarkSweepGC -XX:+CMSPermGenSweepingEnabled -XX:+CMSClassUnloadingEnabled'
     depends_on:
-      - db
+      - solr
+      - db      
+      - iiif
 
-  iiif:
-    image: lorisimageserver/loris
-    build: ./loris
-    volumes:
-      - ./docker-loris-data/images:/opt/loris/tests/img
-    ports:
-      - "10206:5004"
-      
