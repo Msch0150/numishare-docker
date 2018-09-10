@@ -23,7 +23,7 @@ The following links can be used:
 
 ## Overview
 
-![Overview](https://user-images.githubusercontent.com/37273467/42733882-3044fcdc-883a-11e8-9695-dc1e7a472cb2.jpg)
+![numishare_overview_20180910](https://user-images.githubusercontent.com/37273467/45276680-05e0ac00-b4c4-11e8-9211-a20f4d271d66.jpg)
 
 ## Post Installation Tasks
 
