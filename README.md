@@ -38,3 +38,12 @@ In "Modify Setting" > Theme URL:
 > If required, change "localhost" to your local IP address.
     
 (Image created using cat ../myprogram/docker-compose.yml | docker run -i funkwerk/compose_plantuml --link-graph --boundaries| docker run -i think/plantuml > out.svg)
+
+## Backup
+
+Backup the following directories:
+
+    my_numishare/numishare-docker-master/docker-solr-data
+    my_numishare/numishare-docker-master/docker-exist-log
+    my_numishare/numishare-docker-master/docker-exist-data
+    my_numishare/numishare-docker-master/docker-loris-data
