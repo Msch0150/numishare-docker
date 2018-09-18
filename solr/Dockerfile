@@ -12,6 +12,7 @@ ENV SolrHome=/opt/solr/server/solr/
 RUN cd ${TEMP_DIR} && \
     wget https://github.com/ewg118/numishare/archive/master.zip && \
     unzip master.zip && \
+    rm master.zip && \
     mv numishare-master/solr-home/1.5 ${SolrHome}/numishare-published && \
     cd ${SolrHome}/numishare-published && \
     mkdir data && \
