@@ -38,6 +38,7 @@ RUN mkdir -p ${ProjectsDir} && \
     cd ${TEMP_DIR} && \
     wget https://github.com/ewg118/numishare/archive/master.zip && \
     unzip master.zip && \
+    rm master.zip && \
     mv numishare-master ${CATALINA_HOME}/webapps/orbeon/WEB-INF/resources/apps/numishare && \
     sed -i s/localhost:8080/${ExistHost}:${ExistPort}/g ${CATALINA_HOME}/webapps/orbeon/WEB-INF/resources/apps/numishare/exist-config.xml
 RUN cd ${TEMP_DIR} && \
