@@ -2,7 +2,8 @@ version: '3'
 
 services:
   solr:
-    image: solr:v1
+    image: solr:vu
+    container_name: numishare_solr
     build: ./solr
     volumes:
       - ./docker-solr-data/numishare-published/data:/opt/solr/server/solr/numishare-published/data
@@ -10,19 +11,22 @@ services:
       - "10204:8983"
   db:
     image: evolvedbinary/exist-db:eXist-4.0.0
+    container_name: numishare_db
     volumes:
       - ./docker-exist-data:/exist-data
     ports:
       - "10202:8080"
   iiif:
     image: lorisimageserver/loris
-    build: ./loris
+    container_name: numishare_iiif
+    #build: ./loris
     volumes:
       - ./docker-loris-data/images:/opt/loris/tests/img
     ports:
       - "10206:5004"
   web:
-    image: numishare:v1
+    image: numishare:vu
+    container_name: numishare_web
     build: ./web
     ports:
       - "10200:8080"
@@ -30,6 +34,5 @@ services:
       JAVA_OPTS: '-server -Djava.awt.headless=true -Xms1G -Xmx1G -XX:MaxPermSize=256m -XX:NewSize=896m -XX:MaxNewSize=896m -Dlog4j.configuration=/usr/local/tomcat/lib/log4j.properties -XX:+UseConcMarkSweepGC -XX:+CMSPermGenSweepingEnabled -XX:+CMSClassUnloadingEnabled'
     depends_on:
       - solr
-      - db      
+      - db
       - iiif
-
