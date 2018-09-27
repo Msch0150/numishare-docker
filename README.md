@@ -4,8 +4,8 @@
 
 To setup numishare in a Linux environment with Docker installed:
 
-    export INSTALL_DIR=my_numishare
-    mkdir -p ${INSTALL_DIR} && cd ${INSTALL_DIR} && \
+    export TARGET_DIR=/home/docker/numishare
+    mkdir -p ${TARGET_DIR} && cd ${TARGET_DIR} && \
     wget https://github.com/Msch0150/numishare-docker/archive/master.zip && \
     unzip master.zip && \
     rm master.zip && \
@@ -44,7 +44,7 @@ In "Modify Setting" > Theme URL:
 
 Backup the following directories:
 
-    ${INSTALL_DIR}/numishare-docker-master/docker-solr-data
-    ${INSTALL_DIR}/numishare-docker-master/docker-exist-log
-    ${INSTALL_DIR}/numishare-docker-master/docker-exist-data
-    ${INSTALL_DIR}/numishare-docker-master/docker-loris-data
+    ${TARGET_DIR}/numishare-docker-master/docker-solr-data
+    ${TARGET_DIR}/numishare-docker-master/docker-exist-log
+    ${TARGET_DIR}/numishare-docker-master/docker-exist-data
+    ${TARGET_DIR}/numishare-docker-master/docker-loris-data
