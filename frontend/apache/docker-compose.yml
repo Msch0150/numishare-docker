@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  apache:
+    image: frontend_apache:nn
+    container_name: frontend_apache
+    build: ./apache
+    volumes:
+      - ./apache:/usr/local/apache2/htdocs
+    ports:
+      - "80:80"
+    network_mode: host
