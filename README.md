@@ -2,7 +2,7 @@
 
 > docker-solr-data directory need to be writable by id=8983.
 
-To setup numishare in a Linux environment with Docker installed:
+To setup numishare in a Linux environment with "docker" and "unzip" installed:
 
     export TARGET_DIR=/home/docker/numishare
     mkdir -p ${TARGET_DIR} && cd ${TARGET_DIR} && \
