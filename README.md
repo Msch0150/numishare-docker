@@ -11,7 +11,7 @@ To setup numishare in a Linux environment with "docker" and "unzip" installed:
     rm -f master.zip && \
     cd numishare-docker-master && \
     chmod +x setup.sh && \
-    ./setup.sh
+    sudo ./setup.sh
 
 The following links can be used:
 
