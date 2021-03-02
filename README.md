@@ -48,3 +48,14 @@ Backup the following directories:
     ${TARGET_DIR}/numishare-docker-master/docker-exist-log
     ${TARGET_DIR}/numishare-docker-master/docker-exist-data
     ${TARGET_DIR}/numishare-docker-master/docker-loris-data
+
+## Troubleshooting
+
+To install telent:
+
+    apt-get install telnet
+    
+To list and remove all Docker container:
+
+    sudo docker stop $(sudo docker ps -a -q)
+    sudo docker rm $(sudo docker ps -a -q)
