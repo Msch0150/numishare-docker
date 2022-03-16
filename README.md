@@ -1,4 +1,6 @@
-# numishare-docker
+# numishare-docker (deprecated)
+
+Now see: https://github.com/Msch0150/numishare/blob/master/docker/README.md
 
 > docker-solr-data directory need to be writable by id=8983.
 
